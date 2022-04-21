@@ -1,9 +1,10 @@
 CREATE TABLE ACCOUNT (
-    ID INT(11),
+    ID INT(11) NOT NULL AUTO_INCREMENT,
     NAME VARCHAR(50),
     FULL_NAME VARCHAR(50),
     LOGIN VARCHAR(50),
-    email VARCHAR(50)
+    email VARCHAR(50),
+    PRIMARY KEY (ID)
 );
 
 INSERT INTO ACCOUNT Values(1, 'Devid', 'Devid Brain', 'dbrain', 'dbrain@mail.com');
